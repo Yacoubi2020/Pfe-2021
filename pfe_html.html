@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<style> 
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+td.i1
+{
+        background: "{{url_for('static',filename="ump.png")}}" no-repeat;
+}
+}
+
+.myDiv{
+border: 10px outset red;
+    
+  text-align: center;
+
+}
+table.space{  
+border: 2px solid ;  
+text-align: center;  
+font-size: 20px;  
+  
+}  
+ 
+td.y{  
+border-style: dotted solid;
+border-color:#ff6633;
+  
+}  
+#space{  
+border-collapse: separate;  
+border-spacing: 45px;  
+}  
+
+
+#two {
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 25px;
+  
+}
+p.one{
+border-style: inset;
+    border-color: orange;
+}
+p.inset {border-style: inset;}  
+p.outset {border-style: outset;} 
+
+p.yo::first-line {
+  color: #ff6633;
+  font-size: 1.8cm;
+}
+#div1,#div2{
+
+ padding: 20px;
+  display: none;
+}
+
+
+#two:hover {
+background-color: yellow;
+
+}
+span:hover  #div1,#div2{
+display: block;
+}
+</style>
+<head>
+      <title>PFE</title>
+	  <link rel="icon" type="image/png"  href="{{url_for('static',filename="ump.jpeg")}}" sizes="16x16">
+	  <meta name="viewport" content="width=device-width">
+	  	  
+   </head>
+<body>
+<header style="height:10x; width:100% background-color: #a0522d; text-align: center;">
+ <img src="{{url_for('static',filename="ump.jpeg")}}" style="float:left" height="75" width="75"> <img src="{{url_for('static',filename="ump.jpeg")}}" style="float:right" height="75" width="75">
+  
+</header>
+
+<table width = "100%"  border = "3" >
+	   
+         
+         <tr>
+		 <td bgcolor = "" colspan = "" width = "100" background ="{{url_for('static',filename="ll.jpeg")}}"  height = "350">
+			
+               <center> 
+			  
+         <DIV align=center>
+		  
+   <FONT SIZE=7 COLOR="#ffffff" face="Impact"><p class="yo">Système de détection des feux de forêt </p> </FONT></FONT></DIV>
+</FONT><BR> 
+
+      </center>
+            </td>
+			
+         </tr>
+		 <td colspan = "2" bgcolor = "#ff6633" >
+               <marquee>Implémentation d'un prototype de Détection des Feux de forêts,en temps réel et à faible coût, basé sur les Réseaux de Capteurs Sans Fil</marquee>
+            </td></table>
+
+<section>
+
+  <tr valign = "top">
+           <td> <h2><p><div class="myDiv">Capteur Utilisé</div></p></h2>
+		   <table style="width:100%">
+   <tr >
+                 <th ><h4><a href = "ui.html"><div id = "two">capteur DHT22</div></FONT></a></h4></th>
+				 <th ><h4><a href = "u.html"><div id = "two">capteur DALAS</div></a></h4></th>
+		         <th ><h4><a href = "u.html"><div id = "two">capteur FLAME</div></a></h4></th>
+		         <th ><h4><a href = "u.html"><div id = "two">capteur de PLUIE</div></a></h4></th>
+		         <th ><h4><a href = "u.html"><div id = "two">capteur MQ7</div></a></h4></th>
+		         <th ><h4><a href = "u.html"><div id = "two">capteur MG811</div></div></a></h4></th>
+				 <th 
+				 ><h4><a href = "u.html"><div id = "two">capteur MQ2</div></a></h4></th>
+				 
+   </tr></table>
+</section>
+
+
+<article>
+<aside>
+
+
+    <div align=center>
+    <p>
+      <h2><div class="myDiv">Resultat de mesure de chaque capteur</div><h2>
+    </p></div>
+  </aside>
+
+<form method="add" method="GET">              
+			   <table style="width:100%"  id="space"  >
+			   
+			   
+  
+        
+		<tr ><td height=100 width=240 class="y">  <div align=center><img src="{{url_for('static',filename="temp.jpeg")}}"  height="80" width="80"> 
+			  <span class="inset">Valeur de DHT22 </span>  
+			  <div id="div2" > Mesure de temperature</div></div>
+			   </div>
+        
+			   </td> 
+			   <td height=100 width=240 class="y" style="background-color:#FAFAD2"><h1><p style="text-align:center;">{{a}}°C<p></h1></td>
+			   <td class="y"> <div align=center><img  src="{{url_for('static',filename="temp1.jpeg")}}" height="80" width="80"> 
+			      <span class="inset" >Valeur de DALAS </span> 
+			      <div id="div2" > mesure la température </div>
+			   </td>
+			   <td height=100 width=240 class="y" style="background-color:#FAFAD2"><h1><p style="text-align:center;"> {{c}}°C</p></h1> </td>	   
+		</tr>
+			   
+ 
+		 
+			   </table>
+			   
+    <DIV align=center>
+	<table style="width:50%"  id="space"  >
+		 <tr><td height=100 width=240 class="y">  <div align=center><img  src="{{url_for('static',filename="omm1.jpeg")}}"  height="80" width="80"> 
+			  <span class="inset">Valeur de DHT22 </span>  
+			  <div id="div2" > Mesure de humidité</div></div>
+			   </div>
+        
+			   </td> 
+			   <td height=100 width=240 class="y" style="background-color:#FAFAD2"><h1><p style="text-align:center;">{{d}}%</p></h1></h1></td>
+			   
+	    </tr>
+	    </table></div>
+	   
+ <table style="width:100%"  id="space"  >
+			   
+			   
+  
+        
+		<tr ><td class="y" height=100 width=240>  <div align=center><img src="{{url_for('static',filename="co.jpeg")}}"  height="80" width="80">
+              <span class="inset">Valeur de MQ7 </span>  
+			  <div id="div2" > Mesure de CO</div></div>
+			  
+			</td> 
+			<td height=100 width=240 class="y" style="background-color:#FAFAD2"><h1> <p style="text-align:center;">{{f}}PPM</p> </h1> </td>
+			   
+			   <td class="y" height=100 width=240 >  <div align=center><img src="{{url_for('static',filename="smoke.jpeg")}}"  height="70" width="100">
+              <span class="inset">Valeur de MQ2 </span>  
+			  <div id="div2" > Mesure de brobane et smoke</div></div>
+			  
+			</td> 
+			<td height=100 width=200 class="y" style="background-color:#FAFAD2"> <h1> <p style="text-align:center;">smoke :{{j}} PPM <br>
+			 
+                                                               lpg : {{ i}} PPM<br>co={{h}} PPM </p><h1> 			 
+			 
+			 </td>
+		</tr>
+			   
+ 
+		 
+			   </table>
+			    <DIV align=center>
+			   <table style="width:50%"  id="space"  >
+		 <tr>
+		
+		 <td class="y" height=100 width=240>  <div align=center><img src="{{url_for('static',filename="co2.jpeg")}}"  height="100" width="100">
+              <span class="inset">Valeur de MG811 </span>  
+			  <div id="div2" > Mesure co2</div></div>
+			  
+			</td> 
+			   <td height=100 width=200 class="y" style="background-color:#FAFAD2"><h1> <p style="text-align:center;"> <h1>{{g}} PPM</p><h1> </td>
+			   
+	    </tr>
+	    </table></div>
+		
+		<table style="width:100%"  id="space"   >
+			   
+			   
+  
+        
+		<tr ><td class="y" ><div align=center><img src= "{{url_for('static',filename="flamme.jpeg")}}"  height="100" width="100"> 
+			    <span class="inset">Valeur de Flamme </span> 
+				<div id="div2" > detection de Flamme </div>
+	  </td>
+			<td height=100 width=240 class="y" style="background-color:#FAFAD2"><h1><p style="text-align:center;">{{k}}</p><h1></td>
+			  
+			   <td class="y" ><div align=center><img src= "{{url_for('static',filename="pluie.jpeg")}}"  height="100" width="100"> 
+			    <span class="inset">Valeur de pluie </span> 
+				<div id="div2" > detection de pluie </div>
+				
+	  </td>
+	       <td height=100 width=200 class="y" style="background-color:#FAFAD2"> <h1><p style="text-align:center;">{{e}}</p></h1></td>
+		
+		</tr>
+			   
+ 
+		 
+			   </table>
+</form>
+</article>
+<footer> 
+
+            
+            
+			       <marquee bgcolor = "#ff6633" height=50> ELAZIMANI RAJAE-Mohammed YACOUBI-Ahmed AARAB
+				      <p>©Copyright  Tous droits reversés.</p></marquee>
+					 </footer>
+
+</body></html>
